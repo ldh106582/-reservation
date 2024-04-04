@@ -5,6 +5,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -13,16 +18,30 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class ReservationRepositoryImpl implements  ReservationRepository{
 
-	public ReservationRepositoryImpl() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
+	Connection con;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	String url = "jdbc:mysql://localhost:3306/restaurant_db";
+	String id = "root";
+	String pw = "1234";
+	
+    public ReservationRepositoryImpl() {
+        try 
+        {
+            con = DriverManager.getConnection(url, id, pw);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+	
 	@Override
 	public void getRestorant_info() {
 		// TODO Auto-generated method stub
 		String key="6SSihIOiLvtoN4Ov+cME/ZolzUd08COnp0X3j9Zu+Sor8dNfCM7u5Iyy/naB4Q5VsT27bE490/DOXsE/GUdjmQ==";
-		String result = "https://api.odcloud.kr/api/15069262/v1/uddi:5a6c8028-8eb0-40a3-9fa9-e8f6622ab579?page=1&perPage=500&returnType=json&serviceKey=";
+		String result = "https://api.odcloud.kr/api/15069262/v1/uddi:5a6c8028-8eb0-40a3-9fa9-e8f6622ab579?page=1&perPage=100&returnType=json&serviceKey=";
 		
 		try 
 		{
@@ -53,18 +72,51 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 			System.out.println("==================");
 			JSONObject jsonobjcet = new JSONObject(response.toString());
 			System.out.println("jsonobjcet :" + jsonobjcet);
-			JSONArray arr = new JSONArray("data");
+			JSONArray data = jsonobjcet.getJSONArray("data");
 			
-			for(int i = 0; i < arr.length(); i++) 
+			System.out.println("여기오는지 확인");
+			for(int i = 0; i < data.length(); i++) 
 			{
-				JSONObject data = arr.getJSONObject(i);
-				System.out.println("data : " + data);
-				String name = data.getString("업체명");
+				JSONObject item = data.getJSONObject(i);
+				System.out.println("item : " + item);
+				String name = item.getString("업소명");
+				String adrr = item.getString("업소주소");
+				String number = item.getString("업소전화번호");
+				String category = item.getString("업종");
+				
+				System.out.println("업소명 : " + name);
+				String SQL = "insert into restaurant(restaurantName, restaurantAddr, Category, restaurantNumber) values(?,?,?,?)";
+				pstmt = this.con.prepareStatement(SQL);
+				System.out.println("pstmt : " + pstmt);
+				pstmt.setString(1, name);
+				pstmt.setString(2, adrr);
+				pstmt.setString(3, category);
+				pstmt.setString(4, number);
+				
+				pstmt.executeUpdate();
 			}
 		}
 		catch(Exception e) 
 		{
-			
+			e.printStackTrace();
+		}
+		finally 
+		{
+			try 
+			{
+				if(pstmt != null) 
+				{
+					pstmt.close();
+				}
+				if(con != null) 
+				{
+					con.close();
+				}
+			}
+			catch(SQLException e)
+			{
+				e.printStackTrace();
+			}
 		}
 	}
 
