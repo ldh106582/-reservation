@@ -1,9 +1,11 @@
 package com.springmvc.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.springmvc.repository.ReservationRepository;
 
+@Service
 public class ReservationServiceImpl implements ReservationService{
 
 	public ReservationServiceImpl() {

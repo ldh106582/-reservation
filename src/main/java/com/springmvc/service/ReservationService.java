@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.springmvc.repository.ReservationRepository;
 
-@Service
+
 public interface ReservationService {
 
 	void getRestorant_info();
