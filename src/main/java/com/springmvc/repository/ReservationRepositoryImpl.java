@@ -53,12 +53,13 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 			System.out.println("==================");
 			JSONObject jsonobjcet = new JSONObject(response.toString());
 			System.out.println("jsonobjcet :" + jsonobjcet);
-			JSONArray arr = new JSONArray();
+			JSONArray arr = new JSONArray("data");
 			
 			for(int i = 0; i < arr.length(); i++) 
 			{
 				JSONObject data = arr.getJSONObject(i);
 				System.out.println("data : " + data);
+				String name = data.getString("업체명");
 			}
 		}
 		catch(Exception e) 
