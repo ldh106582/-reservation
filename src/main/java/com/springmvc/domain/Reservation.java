@@ -8,8 +8,8 @@ public class Reservation {
 	private String restaurantNumber;
 	private String open_hour;
 	private String description;
-	private String x;
-	private String y;
+	private double x;
+	private double y;
 	private String reservation;
 	private String reservationallow;
 	public Reservation() {
@@ -58,18 +58,7 @@ public class Reservation {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getX() {
-		return x;
-	}
-	public void setX(String x) {
-		this.x = x;
-	}
-	public String getY() {
-		return y;
-	}
-	public void setY(String y) {
-		this.y = y;
-	}
+
 	public String getReservation() {
 		return reservation;
 	}
@@ -81,6 +70,18 @@ public class Reservation {
 	}
 	public void setReservationallow(String reservationallow) {
 		this.reservationallow = reservationallow;
+	}
+	public double getX() {
+		return x;
+	}
+	public void setX(double x) {
+		this.x = x;
+	}
+	public double getY() {
+		return y;
+	}
+	public void setY(double y) {
+		this.y = y;
 	}
 	
 	

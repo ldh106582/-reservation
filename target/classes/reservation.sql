@@ -9,8 +9,12 @@ create table if not exists restaurant(
     restaurantNumber varchar(100),
     open_hour varchar(100),
     description varchar(100),
-    x varchar(100),
-    y varchar(100),
+    x double,
+    y double,
     reservation DateTime,
     reservationallow varchar(100)
 )default charset utf8;
+
+select * from restaurant;
+
+drop table restaurant;

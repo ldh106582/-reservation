@@ -10,10 +10,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Repository;
+
+import com.springmvc.domain.Reservation;
 
 @Repository
 public class ReservationRepositoryImpl implements  ReservationRepository{
@@ -119,5 +125,33 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 			}
 		}
 	}
+
+	@Override
+	public Map<Integer, String> getRestorantNmae() {
+		Map<Integer, String> r_name = new HashMap<>();
+		
+		String r_SQL = "select restaurantNum,restaurantName from restaurant";
+		try
+		{
+			pstmt = this.con.prepareStatement(r_SQL);
+			rs = pstmt.executeQuery();
+			while (rs.next())
+			{
+				int id = rs.getInt("restaurantNum");
+				String name = rs.getString("restaurantName");
+				System.out.println(name);
+				System.out.println(id);
+				r_name.put(id, name);
+			}
+
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return r_name;
+	}
+	
+	
 
 }

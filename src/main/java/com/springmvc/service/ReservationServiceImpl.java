@@ -1,8 +1,12 @@
 package com.springmvc.service;
 
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.springmvc.domain.Reservation;
 import com.springmvc.repository.ReservationRepository;
 
 @Service
@@ -20,6 +24,12 @@ public class ReservationServiceImpl implements ReservationService{
 	public void getRestorant_info() {
 		// TODO Auto-generated method stub
 		reservationRepository.getRestorant_info();
+	}
+
+	@Override
+	public Map<Integer, String> getRestorantNmae() {
+		// TODO Auto-generated method stub
+		return reservationRepository.getRestorantNmae();
 	}
 	
 	
