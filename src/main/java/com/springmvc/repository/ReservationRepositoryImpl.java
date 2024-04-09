@@ -28,7 +28,7 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 	Connection con;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
-	String url = "jdbc:mysql://localhost:3306/restaurant_db";
+	String url = "jdbc:mysql://localhost:3306/restaurant_db?autoReconnect=true";
 	String id = "root";
 	String pw = "1234";
 	
@@ -150,6 +150,55 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 			e.printStackTrace();
 		}
 		return r_name;
+	}
+
+	@Override
+	public Reservation getrocation(String r_num) {
+		Reservation reservation = new Reservation();
+		
+		String SQL = "select * from restaurant";
+		try 
+		{
+			pstmt = this.con.prepareStatement(SQL);
+			rs = pstmt.executeQuery();
+			while(rs.next())
+			{
+				int num = rs.getInt(0);
+				String name = rs.getString(1);
+				String addr = rs.getString(2);
+				String category = rs.getString(3);
+				String number = rs.getString(4);
+				reservation.getRestaurantNum();
+				reservation.getRestaurantName();
+				reservation.getRestaurantAddr();
+				reservation.getCategory();
+				reservation.getRestaurantNumber();
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			try 
+			{
+				if(pstmt != null) 
+				{
+					pstmt.close();
+				}
+				if(rs != null) 
+				{
+					rs.close();
+				}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+		
+		return reservation;
 	}
 	
 	

@@ -11,4 +11,5 @@ import com.springmvc.domain.Reservation;
 public interface ReservationRepository {
 	void getRestorant_info();
 	Map<Integer, String> getRestorantNmae();
+	Reservation getrocation(String r_num);
 }

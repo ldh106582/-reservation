@@ -31,6 +31,12 @@ public class ReservationServiceImpl implements ReservationService{
 		// TODO Auto-generated method stub
 		return reservationRepository.getRestorantNmae();
 	}
+
+	@Override
+	public Reservation getrocation(String r_num) {
+		// TODO Auto-generated method stub
+		return reservationRepository.getrocation(r_num);
+	}
 	
 	
 }

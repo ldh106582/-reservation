@@ -39,7 +39,7 @@ public class ReservationController {
 	@GetMapping("r_allname")
 	public String GetallName(Model model)
 	{
-		 Map<Integer, String> r_Map = new HashMap<>();
+		Map<Integer, String> r_Map = new HashMap<>();
 		System.out.println("이름도착");
 		r_Map = reservationService.getRestorantNmae();
 		model.addAttribute("r_Map", r_Map);
@@ -47,11 +47,13 @@ public class ReservationController {
 	}
 	
 	@GetMapping("r_name")
-	public String getName(HttpServletRequest request) 
+	public String getName(HttpServletRequest request, Model model)
 	{
 		String r_num = request.getParameter("r_num");
 		System.out.println("r_num : " + r_num);
 		
+		Reservation rocation = reservationService.getrocation(r_num);
+		model.addAttribute("rocation", rocation);
 		return "restoran_info";
 	}
 }
