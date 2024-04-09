@@ -9,7 +9,7 @@
 <body>
 	<p>restorantName
 	<c:forEach items="${r_Map}" var="name">
-		<p><a href="/reservation/resotrant_info/r_name?r_num=${name.key}">${name.value}</a>
+		<p> ${name.key} <a href="/reservation/resotrant_info/r_name?r_num=${name.key}">${name.value}</a>
 	</c:forEach>
 </body>
 </html>

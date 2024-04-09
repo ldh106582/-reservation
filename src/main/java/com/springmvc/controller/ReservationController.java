@@ -53,6 +53,7 @@ public class ReservationController {
 		System.out.println("r_num : " + r_num);
 		
 		Reservation rocation = reservationService.getrocation(r_num);
+		
 		model.addAttribute("rocation", rocation);
 		return "restoran_info";
 	}

@@ -4,7 +4,7 @@ public class Reservation {
 	private int restaurantNum;
 	private String restaurantName;
 	private String restaurantAddr;
-	private String Category;
+	private String category;
 	private String restaurantNumber;
 	private String open_hour;
 	private String description;
@@ -34,12 +34,7 @@ public class Reservation {
 	public void setRestaurantAddr(String restaurantAddr) {
 		this.restaurantAddr = restaurantAddr;
 	}
-	public String getCategory() {
-		return Category;
-	}
-	public void setCategory(String category) {
-		Category = category;
-	}
+	
 	public String getRestaurantNumber() {
 		return restaurantNumber;
 	}
@@ -82,6 +77,12 @@ public class Reservation {
 	}
 	public void setY(double y) {
 		this.y = y;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	
 	

@@ -14,9 +14,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.springframework.stereotype.Repository;
 
 import com.springmvc.domain.Reservation;
@@ -106,24 +106,7 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 		{
 			e.printStackTrace();
 		}
-		finally 
-		{
-			try 
-			{
-				if(pstmt != null) 
-				{
-					pstmt.close();
-				}
-				if(con != null) 
-				{
-					con.close();
-				}
-			}
-			catch(SQLException e)
-			{
-				e.printStackTrace();
-			}
-		}
+
 	}
 
 	@Override
@@ -155,7 +138,7 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 	@Override
 	public Reservation getrocation(String r_num) {
 		Reservation reservation = new Reservation();
-		
+		String addr = null;
 		String SQL = "select * from restaurant";
 		try 
 		{
@@ -163,44 +146,82 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 			rs = pstmt.executeQuery();
 			while(rs.next())
 			{
-				int num = rs.getInt(0);
-				String name = rs.getString(1);
-				String addr = rs.getString(2);
-				String category = rs.getString(3);
-				String number = rs.getString(4);
-				reservation.getRestaurantNum();
-				reservation.getRestaurantName();
-				reservation.getRestaurantAddr();
-				reservation.getCategory();
-				reservation.getRestaurantNumber();
+				int num = rs.getInt(1);
+				String name = rs.getString(2);
+				addr = rs.getString(3);
+				String category = rs.getString(4);
+				String number = rs.getString(5);
+				reservation.setRestaurantNum(num);
+				reservation.setRestaurantName(name);
+				reservation.setRestaurantAddr(addr);
+				reservation.setCategory(category);
+				reservation.setRestaurantNumber(number);
+			}
+			System.out.println("주소 : " + addr);
+			System.out.println("================================");
+			
+			String key = "117eaa0143125b51f519835d8f5c0966";
+			String url =  "https://dapi.kakao.com/v2/local/search/address.json?query=" + URLEncoder.encode(addr, "UTF-8");
+			
+			try 
+			{
+				URL r_url = new URL(url);
+				HttpURLConnection h_con = (HttpURLConnection) r_url.openConnection();
+				h_con.setRequestProperty("Authorization", "KakaoAK " + key); // 대문자 그리고띄워쓰기
+				h_con.setRequestMethod("GET");
+				
+				BufferedReader br;
+				int responsecode = h_con.getResponseCode();
+				System.out.println("responsecode : " + responsecode);
+				
+				if(responsecode == 200) 
+				{
+					br = new BufferedReader(new InputStreamReader(h_con.getInputStream(), "UTF-8"));
+				}
+				else
+				{
+					br = new BufferedReader(new InputStreamReader(h_con.getInputStream(), "UTF-8"));
+				}
+				String line;
+				StringBuffer response = new StringBuffer();
+				
+				while((line = br.readLine()) !=null) 
+				{
+					response.append(line);
+				}
+				
+				br.close();
+				
+				
+				JSONTokener tokener = new JSONTokener(response.toString());
+				JSONObject obj = new JSONObject(tokener);
+				System.out.println(" obj : " +  obj.toString());
+				
+				JSONArray arr = obj.getJSONArray("documents");
+				
+				System.out.println("arr :" + arr );
+				
+				if(arr.length() > 0) 
+				{
+					JSONObject temp = arr.getJSONObject(0);
+					double x = temp.getDouble("x");
+					double y = temp.getDouble("y");
+					System.out.println("위도 : " + x + "경도 : " + y);
+					reservation.setX(x);
+					reservation.setY(y);
+				}
+				
+			}
+			catch(Exception e) 
+			{
+				e.printStackTrace();
 			}
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
-		finally
-		{
-			try 
-			{
-				if(pstmt != null) 
-				{
-					pstmt.close();
-				}
-				if(rs != null) 
-				{
-					rs.close();
-				}
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
-		}
-		
 		return reservation;
 	}
-	
-	
 
 }
