@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -44,8 +46,10 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
     }
 	
 	@Override
-	public void getRestorant_info() {
+	public void getRestorant_info() 
+	{
 		// TODO Auto-generated method stub
+		
 		String key="6SSihIOiLvtoN4Ov+cME/ZolzUd08COnp0X3j9Zu+Sor8dNfCM7u5Iyy/naB4Q5VsT27bE490/DOXsE/GUdjmQ==";
 		String result = "https://api.odcloud.kr/api/15069262/v1/uddi:5a6c8028-8eb0-40a3-9fa9-e8f6622ab579?page=1&perPage=100&returnType=json&serviceKey=";
 		

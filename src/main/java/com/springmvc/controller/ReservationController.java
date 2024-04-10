@@ -4,6 +4,7 @@ import java.net.http.HttpRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -56,5 +57,20 @@ public class ReservationController {
 		
 		model.addAttribute("rocation", rocation);
 		return "restoran_info";
+	}
+	
+	@GetMapping("random")
+	public String getRandom() 
+	{
+		Random random = new Random();
+		
+		for(int i = 0; i < 1; i++) 
+		{
+			System.out.println("오픈 시간 : " + (random.nextInt(1439)+1)/60);
+			System.out.println("오픈 분 : " + (random.nextInt(59)+1));
+			System.out.println("오픈 분 : " + (int)Math.round(59)+1);
+		}
+		
+		return "random";
 	}
 }
