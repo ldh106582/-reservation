@@ -50,6 +50,11 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 	{
 		// TODO Auto-generated method stub
 		
+		int o_hour;
+		int o_minut;
+		int c_hour;
+		int c_minut;	
+		
 		String key="6SSihIOiLvtoN4Ov+cME/ZolzUd08COnp0X3j9Zu+Sor8dNfCM7u5Iyy/naB4Q5VsT27bE490/DOXsE/GUdjmQ==";
 		String result = "https://api.odcloud.kr/api/15069262/v1/uddi:5a6c8028-8eb0-40a3-9fa9-e8f6622ab579?page=1&perPage=100&returnType=json&serviceKey=";
 		
@@ -94,14 +99,37 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 				String number = item.getString("업소전화번호");
 				String category = item.getString("업종");
 				
+				// 시간을 넣어줌
+				o_hour = (int)((Math.random())*1439+1)/120;
+				o_minut = (int)((Math.random())*1439+1)/24;
+				c_hour = (int)((Math.random())*1439+1)/60;
+				c_minut = (int)((Math.random())*1439+1)/24;
+				String time = null;
+				if(o_minut % 10 != 0 && c_minut % 10 != 0)
+				{
+					o_minut = (int)Math.round(o_minut/10.0)*10;
+					c_minut = (int)Math.round(c_minut/10.0)*10;
+				}
+				if(o_hour < 10 )
+				{
+					o_hour = 10;
+				}
+				if(c_hour < 20)
+				{
+					c_hour = 20;
+				}
+				
+				time = "오픈시간 : "+o_hour + "시" + o_minut + "분" + " / 클로즈 시간 : " + c_hour + "시" + c_minut + "분";
+				
 				System.out.println("업소명 : " + name);
-				String SQL = "insert into restaurant(restaurantName, restaurantAddr, Category, restaurantNumber) values(?,?,?,?)";
+				String SQL = "insert into restaurant(restaurantName, restaurantAddr, Category, restaurantNumber, open_hour) values(?,?,?,?,?)";
 				pstmt = this.con.prepareStatement(SQL);
 				System.out.println("pstmt : " + pstmt);
 				pstmt.setString(1, name);
 				pstmt.setString(2, adrr);
 				pstmt.setString(3, category);
 				pstmt.setString(4, number);
+				pstmt.setString(5, time);
 				
 				pstmt.executeUpdate();
 			}
@@ -155,11 +183,13 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 				addr = rs.getString(3);
 				String category = rs.getString(4);
 				String number = rs.getString(5);
+				String hours = rs.getString(6);
 				reservation.setRestaurantNum(num);
 				reservation.setRestaurantName(name);
 				reservation.setRestaurantAddr(addr);
 				reservation.setCategory(category);
 				reservation.setRestaurantNumber(number);
+				reservation.setOpen_hour(hours);
 			}
 			System.out.println("주소 : " + addr);
 			System.out.println("================================");

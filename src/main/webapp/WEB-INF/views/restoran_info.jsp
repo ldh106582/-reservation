@@ -63,8 +63,11 @@
           <h1 class="mb-0"> restaurant Name :
             <span class="text-primary">${rocation.restaurantName}</span>
           </h1>
-          <div class="subheading mb-5">restaurant Number : 
+          <div class="subheading">restaurant Number : 
             <a href="#">${rocation.restaurantNumber}</a>
+          </div>
+          <div class="subheading mb-5">restaurant hours : 
+            <a href="#" style="font-size: 20px;">${rocation.open_hour}</a>
           </div>
           <p class="mb-5"> ${rocation.category}</p>
           <p class="mb-5">건강하고 맛있는 밥상을 준비하고 있습니다. 가족들과 식사하기 좋고 어른들을 위한 메뉴를 준비하여 많은 사람들의 입을 행복할 수 있도록 신선하고 맛있는 음식을 여러분들께 제공하도록 하겠습니다. 많은 관심 부탁드립니다 :)</p>
@@ -90,14 +93,6 @@
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>

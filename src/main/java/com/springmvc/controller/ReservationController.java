@@ -62,15 +62,46 @@ public class ReservationController {
 	@GetMapping("random")
 	public String getRandom() 
 	{
-		Random random = new Random();
+		int o_hour;
+		int o_minut;
+		int c_hour;
+		int c_minut;		
 		
 		for(int i = 0; i < 1; i++) 
 		{
-			System.out.println("오픈 시간 : " + (random.nextInt(1439)+1)/60);
-			System.out.println("오픈 분 : " + (random.nextInt(59)+1));
-			System.out.println("오픈 분 : " + (int)Math.round(59)+1);
+			o_hour = (int)((Math.random())*1439+1)/120;
+			o_minut = (int)((Math.random())*1439+1)/24;
+			c_hour = (int)((Math.random())*1439+1)/60;
+			c_minut = (int)((Math.random())*1439+1)/24;
+			String time = null;
+			if(o_minut % 10 != 0 && c_minut % 10 != 0)
+			{
+				o_minut = (int)Math.round(o_minut/10.0)*10;
+				c_minut = (int)Math.round(c_minut/10.0)*10;
+			}
+			if(o_hour < 10 )
+			{
+				o_hour = 10;
+			}
+			if(c_hour < 20)
+			{
+				c_hour = 20;
+			}
+			
+			time = "오픈시간 : "+o_hour + "시" + o_minut + "분" + " / 클로즈 시간 : " + c_hour + "시" + c_minut + "분";
+			System.out.println("time : " + time);
+			System.out.println("오픈시간 : "+o_hour + "시" + o_minut + "분" + " / 클로즈 시간 : " + c_hour + "시" + c_minut + "분");
+			
+			double radius = 5.0; // 원의 반지름
+			double circumference = 2 * Math.PI * radius; // 원의 둘레를 구하는 공식
+
+			System.out.println("원의 둘레: " + circumference);
+			
+			double x = 2.0;
+			double exponential = Math.pow(Math.E, x); // 지수 함수 e^x를 계산하여 반환
+
+			System.out.println("e^2의 값: " + exponential);
 		}
-		
 		return "random";
 	}
 }

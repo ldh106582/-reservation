@@ -8,11 +8,11 @@ create table if not exists restaurant(
     Category varchar(100),
     restaurantNumber varchar(100),
     open_hour varchar(100),
-    description varchar(100),
     x double,
     y double,
     reservation DateTime,
-    reservationallow varchar(100)
+    reservationallow varchar(100),
+    image varchar(100)
 )default charset utf8;
 
 select * from restaurant;
