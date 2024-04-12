@@ -19,6 +19,7 @@
 
 <!-- Custom styles for this template -->
 <link href="/reservation/resources/css/resume.min.css" rel="stylesheet">
+<link href="/reservation/resources/css/my.css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body id="page-top">
@@ -161,43 +162,79 @@
               <h3 class="mb-0">Korean cuisine(한식)</h3>
               <div class="subheading mb-3">representative Korean food(한국을 대표하는 음식)</div>
               
-                <div class="card-deck" style="overflow: auto;">
-                
-				  <div class="card">
-				    <img src="/reservation/resources/img/jae.jpg" class="card-img-top" alt="...">
-				    <div class="card-body">
-				      <h5 class="card-title">Jeyuk-bokkeum(제육볶음)</h5>
-					  <p class="card-text">Jeyuk-bokkeum is a representative Korean dish made by stir-frying thinly sliced pork with spicy seasoning, primarily based on gochujang along with various spices and vegetables. It is commonly enjoyed with rice or as a side dish for alcoholic beverages. </p>
-				      <p class="card-text">제육볶음은 한국의 대표적인 요리로, 얇게 썬 돼지고기를 매콤한 양념과 함께 볶아내는 요리입니다. 이 매콤한 양념은 주로 고추장을 기반으로 하며, 여기에 다양한 향신료와 야채가 더해져 풍부한 맛을 낸답니다. 제육볶음은 보통 밥과 함께 식사로 즐깁니다.</p>
-				    </div>
-				    <div class="card-footer">
-				      <small class="text-muted">가격 : 15,000 원</small>
-				    </div>
+              <div class="slider">
+	              <div class="over">
+	                <div class="card-deck">            
+					  <div class="card">
+					    <img src="/reservation/resources/img/jae.jpg" class="card-img-top" alt="...">
+					    <div class="card-body">
+					      <h5 class="card-title">Jeyuk-bokkeum(제육볶음)</h5>
+						  <p class="card-text">Jeyuk-bokkeum is a representative Korean dish made by stir-frying thinly sliced pork with spicy seasoning, primarily based on gochujang along with various spices and vegetables. It is commonly enjoyed with rice or as a side dish for alcoholic beverages. </p>
+					      <p class="card-text">제육볶음은 한국의 대표적인 요리로, 얇게 썬 돼지고기를 매콤한 양념과 함께 볶아내는 요리입니다. 이 매콤한 양념은 주로 고추장을 기반으로 하며, 여기에 다양한 향신료와 야채가 더해져 풍부한 맛을 낸답니다. 제육볶음은 보통 밥과 함께 식사로 즐깁니다.</p>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">가격 : 15,000 원</small>
+					    </div>
+					  </div>
+					</div>
+					
+				    <div class="card-deck">            
+					  <div class="card">
+					    <img src="/reservation/resources/img/bull.jpg" class="card-img-top" alt="...">
+					    <div class="card-body">
+					      <h5 class="card-title">Bulgogi(불고기)</h5>
+					      <p class="card-text">Bulgogi is one of Korea's traditional dishes, characterized by marinated meat that's grilled to perfection. It primarily uses beef and is known for its sweet and savory flavor profile. Bulgogi is a popular dish often served during family gatherings and holidays.</p>
+					      <p class="card-text">불고기는 한국의 전통적인 요리 중 하나로, 양념에 재운 고기를 구워 먹는 방식입니다. 주로 소고기를 사용하며, 달콤하고 짭짤한 맛이 특징이에요. 불고기는 가족 모임이나 명절 때 자주 차려지는 인기 있는 요리입니다.</p>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">가격 : 15,000 원</small>
+					    </div>
+					  </div>
+					</div>
+					
+					<div class="card-deck">            
+					  <div class="card">
+					    <img src="/reservation/resources/img/bo.jpg" class="card-img-top" alt="..." style="height: 15.4vw">
+					    <div class="card-body">
+					      <h5 class="card-title">Bossam(보쌈)</h5>
+					      <p class="card-text">Bossam is a traditional Korean dish consisting of boiled pork served with cabbage wraps. The meat is boiled in a flavorful brine until tender and served thinly sliced. Each person wraps the meat in salted napa cabbage leaves along with radish salad and salted shrimp.</p>
+					      <p class="card-text">보쌈은 삶은 돼지고기를 배추나 상추에 싸서 먹는 전통적인 한국 요리입니다. 돼지고기는 향이 좋은 육수에 삶아 부드럽게 만든 후 얇게 썰어서 제공됩니다. 일반적으로 절인 배추 잎, 무생채, 그리고 새우젓과 함께 즐깁니다.</p>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">가격 : 20,000원 </small>
+					    </div>
+					  </div>	
+					</div>
+					
+					<div class="card-deck">            
+					  <div class="card">
+					    <img src="/reservation/resources/img/gimbab.jpg" class="card-img-top" alt="...">
+					    <div class="card-body">
+					      <h5 class="card-title">GimBab(김밥)</h5>
+					      <p class="card-text">Bossam is a traditional Korean dish consisting of boiled pork served with cabbage wraps. The meat is boiled in a flavorful brine until tender and served thinly sliced. Each person wraps the meat in salted napa cabbage leaves along with radish salad and salted shrimp.</p>
+					      <p class="card-text">보쌈은 삶은 돼지고기를 배추나 상추에 싸서 먹는 전통적인 한국 요리입니다. 돼지고기는 향이 좋은 육수에 삶아 부드럽게 만든 후 얇게 썰어서 제공됩니다. 일반적으로 절인 배추 잎, 무생채, 그리고 새우젓과 함께 즐깁니다.</p>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">가격 : 8,000원 </small>
+					    </div>
+					  </div>	
+					</div>
+					
+					<div class="card-deck">            
+					  <div class="card">
+					    <img src="/reservation/resources/img/bibim.jpg" class="card-img-top" alt="..." style="height: 15.4vw">
+					    <div class="card-body">
+					      <h5 class="card-title">BiBimBab(비빔밥)</h5>
+					      <p class="card-text">Bossam is a traditional Korean dish consisting of boiled pork served with cabbage wraps. The meat is boiled in a flavorful brine until tender and served thinly sliced. Each person wraps the meat in salted napa cabbage leaves along with radish salad and salted shrimp.</p>
+					      <p class="card-text">보쌈은 삶은 돼지고기를 배추나 상추에 싸서 먹는 전통적인 한국 요리입니다. 돼지고기는 향이 좋은 육수에 삶아 부드럽게 만든 후 얇게 썰어서 제공됩니다. 일반적으로 절인 배추 잎, 무생채, 그리고 새우젓과 함께 즐깁니다.</p>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">가격 : 12,000원 </small>
+					    </div>
+					  </div>	
+					</div>
+					
 				  </div>
-				  
-				  <div class="card">
-				    <img src="/reservation/resources/img/bull.jpg" class="card-img-top" alt="...">
-				    <div class="card-body">
-				      <h5 class="card-title">Bulgogi(불고기)</h5>
-				      <p class="card-text">Bulgogi is one of Korea's traditional dishes, characterized by marinated meat that's grilled to perfection. It primarily uses beef and is known for its sweet and savory flavor profile. Bulgogi is a popular dish often served during family gatherings and holidays.</p>
-				      <p class="card-text">불고기는 한국의 전통적인 요리 중 하나로, 양념에 재운 고기를 구워 먹는 방식입니다. 주로 소고기를 사용하며, 달콤하고 짭짤한 맛이 특징이에요. 불고기는 가족 모임이나 명절 때 자주 차려지는 인기 있는 요리입니다.</p>
-				    </div>
-				    <div class="card-footer">
-				      <small class="text-muted">가격 : 15,000 원</small>
-				    </div>
-				  </div>
-				  
-				  <div class="card">
-				    <img src="/reservation/resources/img/bo.jpg" class="card-img-top" alt="..." style="height: 17vw;">
-				    <div class="card-body">
-				      <h5 class="card-title">Bossam(보쌈)</h5>
-				      <p class="card-text">Bossam is a traditional Korean dish consisting of boiled pork served with cabbage wraps. The meat is boiled in a flavorful brine until tender and served thinly sliced. Each person wraps the meat in salted napa cabbage leaves along with radish salad and salted shrimp.</p>
-				      <p class="card-text">보쌈은 삶은 돼지고기를 배추나 상추에 싸서 먹는 전통적인 한국 요리입니다. 돼지고기는 향이 좋은 육수에 삶아 부드럽게 만든 후 얇게 썰어서 제공됩니다. 일반적으로 절인 배추 잎, 무생채, 그리고 새우젓과 함께 즐깁니다.</p>
-				    </div>
-				    <div class="card-footer">
-				      <small class="text-muted">가격 : 20,000원 </small>
-				    </div>
-				  </div>	
 				</div>
             </div>
           </div>

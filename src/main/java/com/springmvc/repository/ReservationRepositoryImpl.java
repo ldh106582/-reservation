@@ -171,7 +171,7 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 	public Reservation getrocation(String r_num) {
 		Reservation reservation = new Reservation();
 		String addr = null;
-		String SQL = "select * from restaurant";
+		String SQL = "select * from restaurant where restaurantNum = " + r_num;
 		try 
 		{
 			pstmt = this.con.prepareStatement(SQL);
