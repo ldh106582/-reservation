@@ -316,25 +316,25 @@
 	              <div class="over">
 	                <div class="card-deck">            
 					  <div class="card">
-					    <img src="/reservation/resources/img/ramen.jpg" class="card-img-top" alt="..." style="height: 14.3vw">
+					    <img src="/reservation/resources/img/jajang.JPG" class="card-img-top" alt="..." style="height: 14.3vw">
 					    <div class="card-body">
-					      <h5 class="card-title">Ramen(라멘)</h5>
-						  <p class="card-text">Ramen is a beloved Japanese noodle dish consisting of wheat noodles served in a savory broth, typically flavored with soy sauce or miso. It is often topped with sliced pork, green onions, nori, and other toppings, offering a satisfying umami-rich flavor experience. </p>
-					      <p class="card-text">라멘은 일본의 대표적인 면 요리로, 보통 간장 또는 미소로 향긋한 국물에 담긴 밀가루 면으로 이루어져 있습니다. 종종 슬라이스된 돼지고기, 파, 김 등으로 토핑하여, 풍성한 양념맛을 느낄 수 있습니다.</p>
+					      <h5 class="card-title">Jajangmyeon(짜장면)</h5>
+						  <p class="card-text"> A representative noodle dish from China, typically served with black bean sauce over thick, chewy noodles.</p>
+					      <p class="card-text">중국의 대표적인 면 요리로, 탄탄면에 짜장 소스를 곁들여 먹는다.</p>
 					    </div>
 					    <div class="card-footer">
-					      <small class="text-muted">가격 : 13,000 원</small>
+					      <small class="text-muted">가격 : 5,000 원</small>
 					    </div>
 					  </div>
 					</div>
 					
 				    <div class="card-deck">            
 					  <div class="card">
-					    <img src="/reservation/resources/img/sushi.jpg" class="card-img-top" alt="..." style="height: 14.3vw">
+					    <img src="/reservation/resources/img/tang.JPG" class="card-img-top" alt="..." style="height: 14.3vw">
 					    <div class="card-body">
-					      <h5 class="card-title">Sushi(초밥)</h5>
-					      <p class="card-text">Sushi is a traditional Japanese dish consisting of vinegared rice combined with various ingredients such as seafood, vegetables, and occasionally tropical fruits. It is often served with pickled ginger, wasabi, and soy sauce, and enjoyed for its fresh flavors and artistic presentation.</p>
-					      <p class="card-text">초밥은 일본의 전통적인 요리로, 식초로 맛을 낸 밥에 다양한 식재료를 올려 만든 음식입니다. 주로 해산물, 채소, 가끔은 열대 과일과 함께 섭취됩니다. 피클링된 생강, 와사비, 간장과 함께 제공되며, 신선한 맛과 아름다운 모습으로 즐겨집니다.</p>
+					      <h5 class="card-title">Tangsuyuk(탕수육)</h5>
+					      <p class="card-text">A Chinese-style deep-fried dish, where meat is fried and coated with a sweet and sour sauce.</p>
+					      <p class="card-text">고기를 튀겨 단 새콤한 소스로 뒤덮은 중국식 튀김 요리이다.</p>
 					    </div>
 					    <div class="card-footer">
 					      <small class="text-muted">가격 : 30,000 원</small>
@@ -344,28 +344,28 @@
 					
 					<div class="card-deck">            
 					  <div class="card">
-					    <img src="/reservation/resources/img/udon.jpg" class="card-img-top" alt="..." style="height: 14.3vw">
+					    <img src="/reservation/resources/img/mapa.JPG" class="card-img-top" alt="..." style="height: 14.3vw">
 					    <div class="card-body">
-					      <h5 class="card-title">Udon(우동)</h5>
-					      <p class="card-text">Udon is a quintessential Japanese noodle dish, featuring thick wheat noodles served either in a flavorful broth or chilled. It is commonly seasoned with ingredients such as dashi, soy sauce, and salt, and enjoyed with a variety of toppings.</p>
-					      <p class="card-text">우동은 일본의 대표적인 면 요리 중 하나로, 국물이나 냉면 형태로 즐기는 밀가루 면 요리입니다. 보통 다시마, 가쓰오부시, 소금 등으로 맛을 내며, 다양한 토핑과 함께 즐겨집니다.</p>
+					      <h5 class="card-title">Mapa(마파두부)</h5>
+					      <p class="card-text">A traditional Chinese dish made by cooking meat and tofu in chili oil, known for its spicy and flavorful taste.</p>
+					      <p class="card-text">고추 기름에 고기와 두부를 넣어 만든 중국의 전통적인 요리이다.</p>
 					    </div>
 					    <div class="card-footer">
-					      <small class="text-muted">가격 : 12,000원 </small>
+					      <small class="text-muted">가격 : 18,000원 </small>
 					    </div>
 					  </div>	
 					</div>
 					
 					<div class="card-deck">            
 					  <div class="card">
-					    <img src="/reservation/resources/img/nabe.jpg" class="card-img-top" alt="..." style="height: 14.3vw">
+					    <img src="/reservation/resources/img/ggan.JPG" class="card-img-top" alt="..." style="height: 14.3vw">
 					    <div class="card-body">
-					      <h5 class="card-title">Nabe(나베)</h5>
-					      <p class="card-text">Nabe is a representative winter dish in Japan, consisting of various ingredients such as meat, seafood, and vegetables cooked in a hot pot of broth. It comes in many variations and is a popular choice for home-cooked meals as well.</p>
-					      <p class="card-text">나베는 일본의 대표적인 겨울 요리로, 국물에 고기, 해산물, 채소 등을 넣어 끓여 먹는 음식입니다. 다양한 종류가 있으며, 가정에서도 손쉽게 즐길 수 있는 인기 메뉴입니다.</p>
+					      <h5 class="card-title">Kkanpunggi(깐풍기)</h5>
+					      <p class="card-text"> A dish made by frying chicken and tossing it in a spicy sauce, known for its crispy texture and bold flavors.</p>
+					      <p class="card-text">닭고기를 튀기고 매콤한 소스에 버무려낸 요리이다.</p>
 					    </div>
 					    <div class="card-footer">
-					      <small class="text-muted">가격 : 8,000원 </small>
+					      <small class="text-muted">가격 : 18,000원 </small>
 					    </div>
 					  </div>	
 					</div>
@@ -387,13 +387,14 @@
 		          <div class="block-32 aos-init aos-animate" data-aos="fade-up" data-aos-offset="-200">
 		            <form action="#">
 		              <div class="row">
-		                <div id="reserve" class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+		                <div id="reserve" class="col-md-6 mb-3 mb-lg-0 col-lg-5">
 		                  <label for="checkin_date" class="font-weight-bold text-black">Reserve Date</label>
 		                  <div class="field-icon-wrap">
 		                    <div class="icon"><span class="icon-calendar"></span></div>
 		                    <input type="text" id="checkin_date" class="form-control">
 		                  </div>
 		                </div>
+
 		                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
 		                  <div class="row">
 		                    <div class="col-md-6 mb-3 mb-md-0">
@@ -401,10 +402,10 @@
 		                      <div class="field-icon-wrap">
 		                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 		                        <select name="" id="adults" class="form-control">
-		                          <option value="">1</option>
-		                          <option value="">2</option>
-		                          <option value="">3</option>
-		                          <option value="">4+</option>
+		                          <option value="1">1</option>
+		                          <option value="2">2</option>
+		                          <option value="3">3</option>
+		                          <option value="4">4</option>
 		                        </select>
 		                      </div>
 		                    </div>
@@ -413,23 +414,21 @@
 		                      <div class="field-icon-wrap">
 		                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 		                        <select name="" id="children" class="form-control">
-		                          <option value="">1</option>
-		                          <option value="">2</option>
-		                          <option value="">3</option>
-		                          <option value="">4+</option>
+		                          <option value="1">1</option>
+		                          <option value="2">2</option>
+		                          <option value="3">3</option>
+		                          <option value="4">4</option>
 		                        </select>
 		                      </div>
 		                    </div>
-		                  </div>
+		                  </div>		                  
 		                </div>
-		                <div class="col-md-6 col-lg-3 align-self-end">
-		                  <button class="btn btn-primary btn-block text-white">reserve</button>
-		                </div>
+
+		                <span class="col-md-6 mb-3 mb-lg-0 col-lg-12"> *8명 이상 주문할 경우 매장으로 전화 혹은 방문을 통해 예약해주시길 바랍니다.</span>
 		              </div>
-		            </form>
-		            <div class="time_area">
+		              <div class="time_area">
 		            	<div class="calendar_time_slot">
-		            		<div class="time_title">오전</div>
+		            		<div class="time_title mt-2">오전</div>
 		            			<ul class="time_list">
 		            				<li class="time_item">
 		            					<button type="button" class="btn_time">10:00</button>
@@ -472,7 +471,163 @@
 										</li>
 									</ul>
 								</div>
+								
+								<div class="owl-item active" style="width: 1110px; margin-right: 30px;">
+									<div class="prising_active d-flex justify-content-between">
+			                            <div class="single_prising">
+			                                <div class="prise_title">
+			                                    <h4>Hair Styling</h4>
+			                                </div>
+			                                <div class="single_service">
+			                                    <div class="service_inner">
+			                                        <div class="thumb">
+			                                            <img src="img/prising/1.png" alt="">
+			                                        </div>
+			                                    </div>
+			                                    <div class="hair_style_info">
+			                                        <div class="prise d-flex justify-content-between">
+			                                            <span>Hair Cut</span>
+			                                            <span>$8</span>
+			                                        </div>
+			                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+			                                    </div>
+			                                </div>
+			                                <div class="single_service">
+			                                    <div class="service_inner">
+			                                        <div class="thumb">
+			                                            <img src="img/prising/1.png" alt="">
+			                                        </div>
+			                                    </div>
+			                                    <div class="hair_style_info">
+			                                        <div class="prise d-flex justify-content-between">
+			                                            <span>Hair Style</span>
+			                                            <span>$8</span>
+			                                        </div>
+			                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+			                                    </div>
+			                                </div>
+			                                <div class="single_service">
+			                                    <div class="service_inner">
+			                                        <div class="thumb">
+			                                            <img src="img/prising/1.png" alt="">
+			                                        </div>
+			                                    </div>
+			                                    <div class="hair_style_info">
+			                                        <div class="prise d-flex justify-content-between">
+			                                            <span>Shaving</span>
+			                                            <span>$8</span>
+			                                        </div>
+			                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+			                                    </div>
+			                                </div>
+			                            </div>
+		                            
+		                            <div class="single_prising">
+		                                <div class="prise_title">
+		                                    <h4>Hair Styling</h4>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex justify-content-between">
+		                                            <span>Hair Cut</span>
+		                                            <span>$8</span>
+		                                        </div>
+		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex justify-content-between">
+		                                            <span>Hair Style</span>
+		                                            <span>$8</span>
+		                                        </div>
+		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex justify-content-between">
+		                                            <span>Shaving</span>
+		                                            <span>$8</span>
+		                                        </div>
+		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            
+		                            <div class="single_prising">
+		                                <div class="prise_title">
+		                                    <h4>Hair Styling</h4>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex justify-content-between">
+		                                            <span>Hair Cut</span>
+		                                            <span>$8</span>
+		                                        </div>
+		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex justify-content-between">
+		                                            <span>Hair Style</span>
+		                                            <span>$8</span>
+		                                        </div>
+		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex justify-content-between">
+		                                            <span>Shaving</span>
+		                                            <span>$8</span>
+		                                        </div>
+		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            
+                      			  </div>
+                      			</div>
+								
+					           <div class="col-md-6 col-lg-3 align-self-end p-0">
+				                 <button class="btn btn-primary btn-block text-white">reserve</button>
+				              	</div>
 					          </div>
+
+				            </form>
+
 					        </div>
 					      </div>
 					    </section>
