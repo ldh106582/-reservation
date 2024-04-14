@@ -1,20 +1,82 @@
 @charset "EUC-KR";
 
-.slider 
+.slider
 {
-  overflow: hidden; /* 넘치는 컨텐츠를 숨김 */
-  width: 100%; /* 슬라이드 쇼의 너비 설정 */
+  overflow: hidden; 
+  width: 100%;
 }
 
 .over 
 {
-  display: flex; /* 내부 카드를 가로로 배열하기 위해 flex로 설정 */
-  overflow-x: auto; /* 가로로 넘치는 경우 스크롤 표시 */
+  display: flex; 
+  overflow-x: auto; 
 }
 
 .card-deck 
 {
-  flex: 0 0 auto; /* 스크롤할 때 카드 덱의 크기를 고정 */
-  scroll-snap-align: start; /* 스크롤할 때 카드가 스냅되도록 설정 */
-  width: 30%; /* 각 카드 덱의 너비 설정 */
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 30%;
+}
+
+.card-text
+{
+	font-size: 10px;
+}
+
+.field-icon-wrap 
+{
+  position: relative; }
+  .field-icon-wrap .form-control 
+  {
+    position: relative;
+    padding-right: 40px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #a6a6a6; 
+    }
+  .field-icon-wrap .icon 
+  {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 15px;
+    z-index: 2; 
+    }
+  .field-icon-wrap select 
+  {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%; 
+    }
+    
+.time_item
+{
+	margin-right: 0.5vw;
+}
+    
+.btn_time
+{
+	width: 100%;
+	padding: 0px 7px 0px 7px;
+	border-radius: 8px;
+	border: 1px solid;
+	border-color: var(--booking-color-gray80);
+	font-size: 14px;
+	line-height: 38px;
+	color: var(--booking-color-gray20);
+	background-color: rgba(0,0,0,0);
+}
+    
+.time_list 
+{
+	 list-style-type: none;
+	 display:flex;
+	 margin-left: 0;
+	 padding: 0;
+	 margin-right: 10px;
+	 cursor: pointer;
 }
