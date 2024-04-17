@@ -474,9 +474,9 @@
 								
 								<div class="owl-item active" style="width: 1110px; margin-right: 30px;">
 									<div class="prising_active d-flex justify-content-between">
-			                            <div class="single_prising">
+			                            <div class="single_prising col-md-4 p-0">
 			                                <div class="prise_title">
-			                                    <h4>Hair Styling</h4>
+			                                    <h4>KOREAN CUISINE(한식)</h4>
 			                                </div>
 			                                <div class="single_service">
 			                                    <div class="service_inner">
@@ -485,25 +485,14 @@
 			                                        </div>
 			                                    </div>
 			                                    <div class="hair_style_info">
-			                                        <div class="prise d-flex justify-content-between">
-			                                            <span>Hair Cut</span>
-			                                            <span>$8</span>
+			                                    	
+			                                        <div class="prise d-flex">
+			                                            <input type="checkbox" name="jeyuk" class="mr-2">
+			                                            <span>JEYUK-BOKKEUM(제육볶음)</span>
+			                                            <span>15,000원</span>
 			                                        </div>
-			                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
-			                                    </div>
-			                                </div>
-			                                <div class="single_service">
-			                                    <div class="service_inner">
-			                                        <div class="thumb">
-			                                            <img src="img/prising/1.png" alt="">
-			                                        </div>
-			                                    </div>
-			                                    <div class="hair_style_info">
-			                                        <div class="prise d-flex justify-content-between">
-			                                            <span>Hair Style</span>
-			                                            <span>$8</span>
-			                                        </div>
-			                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+			                                        <p>주문할 음식 수를 선택해주세요</p>
+			                                        <input type="number" name="jeyuk_num" min="0">
 			                                    </div>
 			                                </div>
 			                                <div class="single_service">
@@ -513,18 +502,68 @@
 			                                        </div>
 			                                    </div>
 			                                    <div class="hair_style_info">
-			                                        <div class="prise d-flex justify-content-between">
-			                                            <span>Shaving</span>
-			                                            <span>$8</span>
+			                                        <div class="prise d-flex">
+			                                            <input type="checkbox" name="bulgogy" class="mr-2">
+			                                            <span>BULGOGI(불고기)</span>
+			                                            <span>20,000원</span>
 			                                        </div>
-			                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+			                                        <p>주문할 음식 수를 선택해주세요 </p>
+			                                        <input type="number" name="bulgogy_num" min="0">
+			                                    </div>
+			                                </div>
+			                                <div class="single_service">
+			                                    <div class="service_inner">
+			                                        <div class="thumb">
+			                                            <img src="img/prising/1.png" alt="">
+			                                        </div>
+			                                    </div>
+			                                    <div class="hair_style_info">
+			                                        <div class="prise d-flex">
+			                                        <input type="checkbox" name="bossam" class="mr-2">
+			                                            <span>BOSSAM(보쌈)</span>
+			                                            <span>20,000원</span>
+			                                        </div>
+			                                        <p>주문할 음식 수를 선택해주세요 </p>
+			                                        <input type="number" name="bossam_num" min="0">
+			                                    </div>
+			                                </div>
+			                                <div class="single_service">
+			                                    <div class="service_inner">
+			                                        <div class="thumb">
+			                                            <img src="img/prising/1.png" alt="">
+			                                        </div>
+			                                    </div>
+			                                    <div class="hair_style_info">
+			                                        <div class="prise d-flex">
+			                                        <input type="checkbox" name="gimbab" class="mr-2" min="0">
+			                                            <span>GIMBAB(김밥)</span>
+			                                            <span>8,000원</span>
+			                                        </div>
+			                                        <p>주문할 음식 수를 선택해주세요(김밥은 한 줄 가격입니다.) </p>
+			                                        <input type="number" name="gimbab_num" min="0">
+			                                    </div>
+			                                </div>
+			                                <div class="single_service">
+			                                    <div class="service_inner">
+			                                        <div class="thumb">
+			                                            <img src="img/prising/1.png" alt="">
+			                                        </div>
+			                                    </div>
+			                                    <div class="hair_style_info">
+			                                        <div class="prise d-flex">
+			                                        <input type="checkbox" name="bibimbab" class="mr-2">
+			                                            <span>BIBIMBAB(비빔밥)</span>
+			                                            <span>12,000원</span>
+			                                        </div>
+			                                        <p>주문할 음식 수를 선택해주세요 </p>
+			                                        <input type="number" name="bibimbab_num" min="0">
 			                                    </div>
 			                                </div>
 			                            </div>
 		                            
-		                            <div class="single_prising">
+		                            <div class="single_prising col-md-4">
 		                                <div class="prise_title">
-		                                    <h4>Hair Styling</h4>
+		                                    <h4>JAPANEANES CUISINE(일식)</h4>
 		                                </div>
 		                                <div class="single_service">
 		                                    <div class="service_inner">
@@ -533,25 +572,13 @@
 		                                        </div>
 		                                    </div>
 		                                    <div class="hair_style_info">
-		                                        <div class="prise d-flex justify-content-between">
-		                                            <span>Hair Cut</span>
-		                                            <span>$8</span>
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="ramen" class="mr-2">
+		                                            <span>RAMEN(라멘)</span>
+		                                            <span>12,000원</span>
 		                                        </div>
-		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
-		                                    </div>
-		                                </div>
-		                                <div class="single_service">
-		                                    <div class="service_inner">
-		                                        <div class="thumb">
-		                                            <img src="img/prising/1.png" alt="">
-		                                        </div>
-		                                    </div>
-		                                    <div class="hair_style_info">
-		                                        <div class="prise d-flex justify-content-between">
-		                                            <span>Hair Style</span>
-		                                            <span>$8</span>
-		                                        </div>
-		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                        <p>주문할 음식 수를 선택해주세요 </p>
+		                                        <input type="number" name="ramen_num" min="0">
 		                                    </div>
 		                                </div>
 		                                <div class="single_service">
@@ -561,18 +588,53 @@
 		                                        </div>
 		                                    </div>
 		                                    <div class="hair_style_info">
-		                                        <div class="prise d-flex justify-content-between">
-		                                            <span>Shaving</span>
-		                                            <span>$8</span>
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="sushi" class="mr-2">
+		                                            <span>SUSHI(초밥)</span>
+		                                            <span>30,000원</span>
 		                                        </div>
-		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                        <p>주문할 음식 수를 선택해주세요.</p>
+		                                        <p style="font-size: 13px;">새우초밥 1p, 연어 1p, 계란초밥 1p, 소고기초밥 1p, 간장새우초밥 1p, 활어초밥 1p, 홍합초밥 1p, 가리비 초밥 1p, 장어초밥 1p, 가지초밥 1p, 참치초밥 1p, 연어알 초밥 1p 총 12p</p>
+		                                        <input type="number" name="sushi_num" min="0">
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="udong" class="mr-2">
+		                                            <span>UDON(우동)</span>
+		                                            <span>12,000원</span>
+		                                        </div>
+		                                        <p>주문할 음식 수를 선택해주세요</p>
+		                                        <input type="number" name="udong_num" min="0">
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="nabe" class="mr-2">
+		                                            <span>NABE(나베)</span>
+		                                            <span>8,000원</span>
+		                                        </div>
+		                                        <p>주문할 음식 수를 선택해주세요</p>
+		                                        <input type="number" name="nabe_num" min="0">
 		                                    </div>
 		                                </div>
 		                            </div>
 		                            
-		                            <div class="single_prising">
+		                            <div class="single_prising col-md-4">
 		                                <div class="prise_title">
-		                                    <h4>Hair Styling</h4>
+		                                    <h4>CHINESE CUISINE(중식)</h4>
 		                                </div>
 		                                <div class="single_service">
 		                                    <div class="service_inner">
@@ -581,25 +643,13 @@
 		                                        </div>
 		                                    </div>
 		                                    <div class="hair_style_info">
-		                                        <div class="prise d-flex justify-content-between">
-		                                            <span>Hair Cut</span>
-		                                            <span>$8</span>
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="jajng" class="mr-2">
+		                                            <span>JAJANGMYEON(짜장면)</span>
+		                                            <span>5,000원</span>
 		                                        </div>
-		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
-		                                    </div>
-		                                </div>
-		                                <div class="single_service">
-		                                    <div class="service_inner">
-		                                        <div class="thumb">
-		                                            <img src="img/prising/1.png" alt="">
-		                                        </div>
-		                                    </div>
-		                                    <div class="hair_style_info">
-		                                        <div class="prise d-flex justify-content-between">
-		                                            <span>Hair Style</span>
-		                                            <span>$8</span>
-		                                        </div>
-		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                        <p>주문할 음식 수를 선택해주세요 </p>
+		                                        <input type="number" name="jajng_num" min="0">
 		                                    </div>
 		                                </div>
 		                                <div class="single_service">
@@ -609,19 +659,57 @@
 		                                        </div>
 		                                    </div>
 		                                    <div class="hair_style_info">
-		                                        <div class="prise d-flex justify-content-between">
-		                                            <span>Shaving</span>
-		                                            <span>$8</span>
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="tangsuyuk" class="mr-2">
+		                                            <span>TANGSUYUK(탕수육))</span>
+		                                            <span>30,000원</span>
 		                                        </div>
-		                                        <p>Lorem ipsum dolor sitamet, consectetur </p>
+		                                        <p>주문할 음식 수를 선택해주세요.</p>
+		                                        <input type="number" name="tangsuyuk_num" min="0">
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="mapa" class="mr-2">
+		                                            <span>MAPA(마파두부)</span>
+		                                            <span>18,000원</span>
+		                                        </div>
+		                                        <p>주문할 음식 수를 선택해주세요</p>
+		                                        <input type="number" name="mapa_num" min="0">
+		                                    </div>
+		                                </div>
+		                                <div class="single_service">
+		                                    <div class="service_inner">
+		                                        <div class="thumb">
+		                                            <img src="img/prising/1.png" alt="">
+		                                        </div>
+		                                    </div>
+		                                    <div class="hair_style_info">
+		                                        <div class="prise d-flex">
+		                                        <input type="checkbox" name="kkanpunggi" class="mr-2">
+		                                            <span>KKANPUNGGI(깐풍기)</span>
+		                                            <span>18,000원</span>
+		                                        </div>
+		                                        <p>주문할 음식 수를 선택해주세요</p>
+		                                        <input type="number" name="kkanpunggi_num" min="0">
 		                                    </div>
 		                                </div>
 		                            </div>
 		                            
                       			  </div>
                       			</div>
+                      			
+								<div class="border border-dark">
+									<p>
+								</div>
 								
-					           <div class="col-md-6 col-lg-3 align-self-end p-0">
+					           <div class="col-md-6 col-lg-3 align-self-end p-0 mt-2">
 				                 <button class="btn btn-primary btn-block text-white">reserve</button>
 				              	</div>
 					          </div>
