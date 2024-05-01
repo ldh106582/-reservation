@@ -98,6 +98,14 @@
               </a>
             </li>
           </ul>
+	          <div style="position: relative;">
+	          	<div class="border border-dark" style="position: fixed; top: 65%; left: 84%; padding: 150px;">
+				    <form style="bottom: 9.8%; position: fixed; left: 85%">
+				        <input class="" style="bottom: 0%" type="text">
+				        <input type="submit" value="제출">
+				    </form>
+				</div>
+	        </div>
         </div>
       </section>
 
