@@ -668,7 +668,7 @@
 		                                    </div>
 		                                    <div class="hair_style_info">
 		                                        <div class="prise d-flex">
-		                                        <input type="checkbox" name="tangsuyuk" class="mr-2">
+		                                        <input type="checkbox" name="tangsuyuk" class="clickable mr-2" onclick="showText(this)">
 		                                            <span>TANGSUYUK(탕수육))</span>
 		                                            <span>30,000원</span>
 		                                        </div>
@@ -713,8 +713,14 @@
                       			  </div>
                       			</div>
                       			
+<<<<<<< HEAD
+								  <div id="displaytext">
+									<p></p>
+									<div></div>
+=======
 								<div class="border border-dark">
 									<p>
+>>>>>>> 0868540b43625f16fd9915e2d986db0ff556b3ba
 								</div>
 								
 					           <div class="col-md-6 col-lg-3 align-self-end p-0 mt-2">
