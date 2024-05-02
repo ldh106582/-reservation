@@ -9,6 +9,7 @@
 
 <!-- Bootstrap core CSS -->
 <link href="/reservation/resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/reservation/resources/css/restoran_info.css" rel="stylesheet">
 
 <!-- Custom fonts for this template -->
 <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -98,15 +99,17 @@
               </a>
             </li>
           </ul>
-	          <div style="position: relative;">
-	          	<div class="border border-dark" style="position: fixed; top: 65%; left: 84%; padding: 150px;">
-				    <form style="bottom: 9.8%; position: fixed; left: 85%">
-				        <input class="" style="bottom: 0%" type="text">
-				        <input type="submit" value="제출">
-				    </form>
-				</div>
-	        </div>
         </div>
+        
+        <div class="fix border border-dark">
+	        <div>
+	        	<form>
+	        		<input type="text">
+	        		<input type="submit">
+	        	</form>
+	        </div>
+      	</div>
+      	
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
@@ -713,14 +716,11 @@
                       			  </div>
                       			</div>
                       			
-<<<<<<< HEAD
 								  <div id="displaytext">
 									<p></p>
 									<div></div>
-=======
 								<div class="border border-dark">
 									<p>
->>>>>>> 0868540b43625f16fd9915e2d986db0ff556b3ba
 								</div>
 								
 					           <div class="col-md-6 col-lg-3 align-self-end p-0 mt-2">
