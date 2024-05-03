@@ -102,12 +102,11 @@
         </div>
         
         <div class="fix border border-dark">
-	        <div>
-	        	<form>
+	        <div></div>
+	        	<form id="gptchat">
 	        		<input type="text">
 	        		<input type="submit">
 	        	</form>
-	        </div>
       	</div>
       	
       </section>
@@ -813,4 +812,5 @@ marker.setMap(map);
 <script src="/reservation/resources/vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="/reservation/resources/js/resume.min.js"></script>
 <script src="/reservation/resources/js/my.js"></script>
+<script src="/reservation/resources/js/restoran_info.js"></script>
 </html>
