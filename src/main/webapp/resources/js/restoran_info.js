@@ -1,18 +1,21 @@
-const gptchat = document.getElementById("gptchat");
-const userInput = document.getElementById("userinput");
 const talk = document.getElementById('talk');
+const gptchat = document.getElementById('gptchat');
+const userinput = document.getElementById('userinput');
 
 gptchat.addEventListener('submit', function(event){
 	event.preventDefault();
-
-	const message = userInput.value;
 	
+	const message = userinput.value;
 	
-	userInput.value = '';
+	addMessage(message);
+	userinput.value = '';
 });
 
-function displayMessage(message){
-	const t_message = document.createElement('div');
-	messageElement.textContect = message;
-	talk.appendChild(t_message);
+function addMessage(message) {
+	const messageElement = document.createElement('div');
+	
+	messageElement.textContent = message;
+	messageElement.classList.add('me');
+	
+	talk.appendChild(messageElement);
 }

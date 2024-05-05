@@ -103,10 +103,10 @@
         
         <div class="fix border border-dark">
 	        <div id="talk"></div>
-	        	<form id="gptchat">
-	        		<input type="text" id="userinput">
-	        		<input type="submit">
-	        	</form>
+        	<form id="gptchat">
+        		<input type="text" id="userinput">
+        		<input type="submit">
+        	</form>
       	</div>
       	
       </section>
