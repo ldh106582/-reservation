@@ -122,9 +122,6 @@
               <div class="subheading mb-3">Restaurant Address(가게주소)</div>
               <p>${rocation.restaurantAddr} </p>
             </div>
-            <!-- <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
-            </div> -->
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -133,21 +130,9 @@
               <div class="subheading mb-3"></div>
               	<p><div id="map" style="width:70vw;height:520px;"></div></p>
             </div>
-          <!--   <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
-            </div> -->
           </div>
 
-         <!--  <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
+         <!-- 
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
