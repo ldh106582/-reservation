@@ -12,8 +12,6 @@
 
 #talk 
 {
-	width: 200px;
-	height: 200px;
 	overflow-y: auto;	
 }
 
@@ -24,18 +22,18 @@
 
 #gptchat
 {
-  width: 80%;
+  width: 100%;
   border-top: 1px solid #ccc;
 }
 
 #userinput
 {
-	width: 80%;	
+	width: 60%;
 }
 
 #submit
 {
-	width: 20%;	
+	width: 30%;	
 }
 
 .me
