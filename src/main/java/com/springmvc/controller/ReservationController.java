@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.springmvc.domain.Reservation;
@@ -103,5 +104,16 @@ public class ReservationController {
 			System.out.println("e^2의 값: " + exponential);
 		}
 		return "random";
+	}
+	
+	@PostMapping("gpt")
+	public String get_gpt(String m_gpt, HttpServletRequest request)
+	{
+		m_gpt = request.getParameter("m_gpt");
+		System.out.println("m_gpt : " + m_gpt);
+		
+		reservationService.getrocation(m_gpt);
+		
+		return "restoran_info";
 	}
 }

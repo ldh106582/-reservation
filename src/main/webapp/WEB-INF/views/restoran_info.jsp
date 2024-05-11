@@ -104,7 +104,7 @@
         <div class="fix border border-dark">
         	<div class="chat-message">궁금하신 점을 입력해주세요.</div>
 	        <div id="talk"></div>
-        	<form id="gptchat">
+        	<form id="gptchat" action="/resotrant_info/">
         		<input type="text" id="userinput">
         		<input type="submit" id="submit">
         	</form>
