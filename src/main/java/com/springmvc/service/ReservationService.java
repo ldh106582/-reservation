@@ -15,4 +15,5 @@ public interface ReservationService {
 	void getRestorant_info();
 	Map<Integer, String> getRestorantNmae();
 	Reservation getrocation(String r_num);
+	void get_gpt(String m_gpt);
 }

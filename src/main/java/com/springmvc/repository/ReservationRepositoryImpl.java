@@ -258,4 +258,28 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 		return reservation;
 	}
 
+	@Override
+	public void get_gpt(String m_gpt) {
+	String key = "";
+	String api = "https://api.openai.com/v1/completions";
+		
+		try
+		{
+			String encoding = URLEncoder.encode(key, "UTF-8");
+			URL url = new URL(api);
+			
+			HttpURLConnection con = (HttpURLConnection)url.openConnection();
+			con.setRequestMethod("POST");
+			int responseConde = con.getResponseCode();
+			System.out.println("gpt_responseConde : " + responseConde);
+		}
+		catch(Exception e)
+		{
+			
+		}
+		
+	}
+	
+	
+
 }

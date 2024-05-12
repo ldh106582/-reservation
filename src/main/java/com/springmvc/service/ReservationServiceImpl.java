@@ -37,6 +37,12 @@ public class ReservationServiceImpl implements ReservationService{
 		// TODO Auto-generated method stub
 		return reservationRepository.getrocation(r_num);
 	}
+
+	@Override
+	public void get_gpt(String m_gpt) {
+		// TODO Auto-generated method stub
+		reservationRepository.get_gpt(m_gpt);
+	}
 	
 	
 }

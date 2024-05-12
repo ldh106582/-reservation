@@ -107,12 +107,12 @@ public class ReservationController {
 	}
 	
 	@PostMapping("gpt")
-	public String get_gpt(String m_gpt, HttpServletRequest request)
+	public String Get_gpt(String m_gpt, HttpServletRequest request)
 	{
 		m_gpt = request.getParameter("m_gpt");
 		System.out.println("m_gpt : " + m_gpt);
 		
-		reservationService.getrocation(m_gpt);
+		reservationService.get_gpt(m_gpt);
 		
 		return "restoran_info";
 	}
