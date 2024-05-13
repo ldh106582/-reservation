@@ -272,6 +272,16 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 			con.setRequestMethod("POST");
 			int responseConde = con.getResponseCode();
 			System.out.println("gpt_responseConde : " + responseConde);
+			
+			BufferedReader br;
+			if(responseConde == 200) 
+			{
+				br = new BufferedReader(new InputStreamReader(con.getInputStream(), "UTF-8"));
+			}
+			else 
+			{
+				br = new BufferedReader(new InputStreamReader(con.getInputStream(), "UTF-8"));
+			}
 		}
 		catch(Exception e)
 		{
