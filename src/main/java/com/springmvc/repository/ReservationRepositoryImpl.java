@@ -285,11 +285,10 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 		}
 		catch(Exception e)
 		{
-			
+			e.printStackTrace();
 		}
 		
 	}
-	
 	
 
 }
