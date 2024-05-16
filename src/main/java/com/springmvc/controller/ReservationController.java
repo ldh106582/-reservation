@@ -105,8 +105,12 @@ public class ReservationController {
 		}
 		return "random";
 	}
+	@GetMapping("/gpt")
+	public String Set_gpt(String m_gpt) {
+		return "restoran_info";
+	}
 	
-	@PostMapping("gpt")
+	@PostMapping("/gpt")
 	public String Get_gpt(String m_gpt, HttpServletRequest request)
 	{
 		m_gpt = request.getParameter("m_gpt");

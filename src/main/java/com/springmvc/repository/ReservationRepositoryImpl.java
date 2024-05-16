@@ -259,9 +259,10 @@ public class ReservationRepositoryImpl implements  ReservationRepository{
 	}
 
 	@Override
-	public void get_gpt(String m_gpt) {
-	String key = "";
-	String api = "https://api.openai.com/v1/completions";
+	public void get_gpt(String m_gpt) 
+	{
+		String key = "";
+		String api = "https://api.openai.com/v1/completions";
 		
 		try
 		{
